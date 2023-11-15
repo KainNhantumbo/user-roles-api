@@ -2,13 +2,28 @@
   "name": "user-roles-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx --watch src/app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "typecheck:watch": "tsc -w",
+    "drizzle:migrate": ""
+  },
+  "license": {
+    "name": "Apache License Version 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.6.7"
+  },
+  "author": {
+    "name": "Kain Nhantumbo",
+    "email": "nhantumbok@gmail.com",
+    "url": "https://codenut-dev.vercel.app"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",
